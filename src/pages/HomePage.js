@@ -1,5 +1,4 @@
-import { Container, Row, Col } from 'reactstrap';
-import BannerCard from '../features/banner/BannerCard';
+import BannerCard from '../components/BannerCard';
 
 const HomePage = () => {
     return (

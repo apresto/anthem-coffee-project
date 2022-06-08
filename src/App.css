@@ -18,6 +18,11 @@ h2 {
     color: #3046c5;
 }
 
+.btn-primary {
+    background-color: #BF202F!important;
+    border-color: #BF202F!important;
+}
+
 .card-img-overlay .card-title {
     color: white;
     background-color: rgba(0, 0, 0, 0.5);
@@ -76,7 +81,7 @@ h2 {
 .masthead {
     height: 100vh;
     min-height: 500px;
-    background-image: url('./app/assets/images/parallax.jpg');
+    background: linear-gradient(rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url('./app/assets/images/parallax.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -89,6 +94,22 @@ h2 {
     background-size: cover;
 }
 
-/* .card-title {
-    font-size: 3rem;
-} */
+.hero-title {
+    font-size: 44px;
+}
+
+.bannerhead {
+    height: 20vh;
+    min-height: 200px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+ol.center {
+    list-style-position: inside;
+}
+
+.site-footer {
+    margin-top: 0;
+}

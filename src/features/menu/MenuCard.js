@@ -1,7 +1,9 @@
 import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 
-const DrinkCard = ({ drink }) => {
-    const { image, name } = drink;
+export const MenuCard = ({ menu }) => {
+    const { image, name } = menu;
+
+
     return (
         <Card>
             <CardImg 
@@ -16,4 +18,4 @@ const DrinkCard = ({ drink }) => {
     )
 }
 
-export default DrinkCard;
+export default MenuCard
