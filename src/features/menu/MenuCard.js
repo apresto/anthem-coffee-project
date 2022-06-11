@@ -3,7 +3,6 @@ import { Card, CardImg, CardImgOverlay, CardTitle } from 'reactstrap';
 export const MenuCard = ({ menu }) => {
     const { image, name } = menu;
 
-
     return (
         <Card>
             <CardImg 

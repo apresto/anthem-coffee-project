@@ -2,16 +2,11 @@ import { useState } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import MenuDetail from '../features/menu/MenuDetail';
 import MenuList from '../features/menu/MenuList';
-import { selectDrinkById } from '../features/menu/drinksSlice';
-import { selectPastryById } from '../features/pastries/pastriesSlice';
+import { selectItemById } from '../features/menu/menuSlice';
 
 const MenuDirectoryPage = () => {
     const [menuId, setMenuId] = useState(0);
-    const selectedMenu = selectDrinkById(menuId);
-    const selectedPastry = selectPastryById(menuId);
-    // const selectedMenu = selectedDrink.concat(selectedPastry);
-
-    // console.log(selectedMenu.map(pastry => pastry))
+    const selectedMenu = selectItemById(menuId);
 
     return (
         <Container>

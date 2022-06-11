@@ -1,12 +1,9 @@
 import { Col, Row } from 'reactstrap';
 import MenuCard from './MenuCard';
-import { selectAllDrinks } from './drinksSlice';
-import { selectAllPastries } from './pastriesSlice';
+import { selectMenuItems } from './menuSlice';
 
 const MenuList = ({ setMenuId }) => {
-    const drinks = selectAllDrinks();
-    const pastry = selectAllPastries();
-    const menu = drinks.concat(pastry);
+    const menu = selectMenuItems();
 
     return (
         <Row className="ms-auto">
@@ -19,7 +16,6 @@ const MenuList = ({ setMenuId }) => {
                         onClick={() => setMenuId(menu.id)}
                     >
                         <MenuCard menu={menu} />
-                        
                     </Col>
                 )
             })}
