@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import MenuDirectoryPage from './pages/MenuDirectoryPage';
 import LocationsDirectoryPage from './pages/LocationsDirectoryPage';
+import MenuDetailPage from './pages/MenuDetailPage';
 import './App.css';
 
 function App() {
@@ -15,6 +16,10 @@ function App() {
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='menu' element={<MenuDirectoryPage />} />
+        <Route 
+          path='menu/:itemId'
+          element={<MenuDetailPage />}
+        />
         <Route path='locations' element={<LocationsDirectoryPage />} />
         <Route path='about' element={<About />} />
         <Route path='contact' element={<ContactPage />} />

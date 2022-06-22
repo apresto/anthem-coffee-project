@@ -1,4 +1,4 @@
-import { Card, CardImg, CardTitle, CardSubtitle, CardText, CardBody, Col } from 'reactstrap';
+import { Card, CardImg, CardTitle, CardText, CardBody, Col } from 'reactstrap';
 
 const LocationDetail = ({location}) => {
     const {name, image, address, weekdays, weekends} = location;

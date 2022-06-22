@@ -1,25 +1,22 @@
+import { useSelector } from 'react-redux';
 import { Col, Row } from 'reactstrap';
 import MenuCard from './MenuCard';
-import { selectAllDrinks } from './drinksSlice';
-import { selectAllPastries } from './pastriesSlice';
+import { selectAllItems } from './menuSlice';
 
-const MenuList = ({ setMenuId }) => {
-    const drinks = selectAllDrinks();
-    const pastry = selectAllPastries();
-    const menu = drinks.concat(pastry);
+const MenuList = () => {
+    const menu = useSelector(selectAllItems);
+    console.log('menu:', menu);
 
     return (
-        <Row className="ms-auto">
+        <Row className="ms-auto justify-content-center">
             {menu.map((menu) => {
                 return (
                     <Col 
-                        md='5' 
-                        className='m-4' 
+                        md='5'
+                        className='m-4'
                         key={menu.id}
-                        onClick={() => setMenuId(menu.id)}
                     >
                         <MenuCard menu={menu} />
-                        
                     </Col>
                 )
             })}

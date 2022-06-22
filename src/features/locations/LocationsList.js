@@ -1,10 +1,11 @@
-import { Text } from 'react';
+import { useSelector } from 'react-redux';
 import { Col, Row } from 'reactstrap';
-import LocationList from './LocationDetail';
-import { selectAllLocations } from'./locationsSlice';
+import LocationDetail from './LocationDetail';
+import { selectAllLocations } from './locationsSlice';
 
 const LocationsList = () => {
-    const locations = selectAllLocations();
+    const locations = useSelector(selectAllLocations);
+    console.log('locations:', locations)
 
     return (
         <Row className='ms-auto'>
@@ -15,7 +16,7 @@ const LocationsList = () => {
                         className='m-4'
                         key={location.id}
                     >
-                        <LocationList location={location} />
+                        <LocationDetail location={location} />
                     </Col>
                 )
             })}

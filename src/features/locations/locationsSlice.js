@@ -1,9 +1,27 @@
+import { createSlice } from '@reduxjs/toolkit';
 import { LOCATIONS } from '../../app/shared/LOCATIONS';
 
-export const selectAllLocations = () => {
-    return LOCATIONS;
+const initialState = {
+    locationsArray: LOCATIONS
 };
 
-export const selectLocationById = (id) => {
-    return LOCATIONS.find((location) => location.id === id)
-}
+const locationsSlice = createSlice({
+    name: 'locations',
+    initialState
+});
+
+export const locationsReducer = locationsSlice.reducer;
+
+export const selectAllLocations = (state) => {
+    return state.locations.locationsArray;
+};
+
+// export const selectLocationById = (id) => (state) => {
+//     return state.locations.locationsArray.find(
+//         (location) => location.id === parseInt(id)
+//     );
+// }
+
+// export const selectFeaturedLocations = (state) => {
+//     return state.locations.locationsArray.find((location) => location.featured);
+// };
