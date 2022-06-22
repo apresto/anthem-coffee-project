@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 export const MenuCard = ({ menu }) => {
     const { id, image, name } = menu;
 
-
     return (
         <Link to={`${id}`}>
             <Card>
