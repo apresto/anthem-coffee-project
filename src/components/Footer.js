@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <footer className='site-footer bg-light'>
             <Container>
-                <Row>
-                    <Col xs={{ size: 4, offset: 1 }} sm='2'>
+                <Row className='justify-content-center align-items-center'>
+                    <Col xs={{ size: 4, offset: 1 }} sm='2' className='aligns-items-center'>
                         <h5>Links</h5>
                         <ul className='list-unstyled'>
                             <li>
@@ -54,6 +54,7 @@ const Footer = () => {
                         </a>
                     </Col>
                     <Col sm='4' className='text-center'>
+                        <h5>Contact</h5>
                         <a
                             role='button'
                             className='btn btn-link'
@@ -65,9 +66,9 @@ const Footer = () => {
                         <a
                             role='button'
                             className='btn btn-link'
-                            href='mailto:notreal@notreal.co'
+                            href='mailto:johndoe@email.com'
                         >
-                            <i className='fa fa-envelope-o' /> campsites@nucamp.co
+                            <i className='fa fa-envelope-o' /> johndoe@email.com
                         </a>
                     </Col>
                 </Row>

@@ -16,12 +16,6 @@ export const selectAllLocations = (state) => {
     return state.locations.locationsArray;
 };
 
-// export const selectLocationById = (id) => (state) => {
-//     return state.locations.locationsArray.find(
-//         (location) => location.id === parseInt(id)
-//     );
-// }
-
-// export const selectFeaturedLocations = (state) => {
-//     return state.locations.locationsArray.find((location) => location.featured);
-// };
+export const selectFeaturedLocations = (state) => {
+    return state.locations.locationsArray.find((location) => location.featured);
+};

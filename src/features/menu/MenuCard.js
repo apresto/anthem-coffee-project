@@ -20,4 +20,4 @@ export const MenuCard = ({ menu }) => {
     )
 }
 
-export default MenuCard
+export default MenuCard;

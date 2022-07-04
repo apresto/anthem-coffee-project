@@ -4,14 +4,13 @@ import icedMocha from '../assets/images/iced-mocha.jpg';
 import icedAmericano from '../assets/images/iced-americano.jpg';
 import whiteCaramelMocha from '../assets/images/white-caramel-mocha.jpg';
 
-
 export const DRINKS = [
     {
         id: 0,
         name: "Vanilla Dirty Chai",
         image: vanillaDirtyChai,
         price: "$4.20",
-        featured: true,
+        featured: false,
         description: 'vanilla or spicy chai + espresso + steamed milk'
     },
     {
@@ -43,7 +42,7 @@ export const DRINKS = [
         name: 'White Caramel Mocha',
         image: whiteCaramelMocha,
         price: '$4.50',
-        featured: false,
+        featured: true,
         description: 'white chocolate + caramel + espresso + milk'
     }
 ]

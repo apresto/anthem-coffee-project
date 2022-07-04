@@ -34,14 +34,11 @@ h2 {
     min-height: 200px;
 }
 
-<<<<<<< HEAD
 .site-footer {
     padding: 20px 0;
     margin-top: 2rem;
 }
 
-=======
->>>>>>> 937325235c7a5f458815419a5d3ac7eaa3f654c5
 .navbar-brand {
     max-width: 4rem;
     margin-right: 2rem;
@@ -108,11 +105,19 @@ h2 {
     justify-content: center;
 }
 
+.featured-items {
+    width: 20vw;
+}
+
+.mw-350 {
+    max-width: 350px;
+}
+
 ol.center {
     list-style-position: inside;
 }
 
 .site-footer {
-    background-image: linear-gradient(#cec8ff, white);
+    /* background-image: linear-gradient(#cec8ff, white); */
     padding: 20px 0;
 }

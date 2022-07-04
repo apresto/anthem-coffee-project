@@ -13,7 +13,8 @@ export const LOCATIONS = [
         image: downtownPuyallup,
         address: '210 W Pioneer, Puyallup, WA',
         weekdays: '6am-6pm Weekdays',
-        weekends: '7am-6pm Weekends'
+        weekends: '7am-6pm Weekends',
+        featured: false
     },
     {
         id: 9,
@@ -21,7 +22,8 @@ export const LOCATIONS = [
         image: downtownTacoma,
         address: '1911 Pacific Ave, Tacoma, WA',
         weekdays: '7am-4pm Weekdays',
-        weekends: 'Closed Sunday'
+        weekends: 'Closed Sunday',
+        featured: false
     },
     {
         id: 10,
@@ -29,7 +31,8 @@ export const LOCATIONS = [
         image: oldTownTacoma,
         address: '2312 N. 30th St. Tacoma, WA',
         weekdays: '7am-4pm Weekdays',
-        weekends: '8am-4pm Weekends'
+        weekends: '8am-4pm Weekends',
+        featured: false
     },
     {
         id: 11,
@@ -37,7 +40,8 @@ export const LOCATIONS = [
         image: tacomaStadiumDistrict,
         address: '102 N. St. Tacoma, WA',
         weekdays: '7am-4pm Weekdays',
-        weekends: '7am-4pm Weekends'
+        weekends: '7am-4pm Weekends',
+        featured: true
     },
     {
         id: 12,
@@ -45,7 +49,8 @@ export const LOCATIONS = [
         image: pointRuston,
         address: '5005 Main St. #105, Tacoma, WA',
         weekdays: '6am-6pm Mon-Thur',
-        weekends: '7am-6pm Fri-Sun'
+        weekends: '7am-6pm Fri-Sun',
+        featured: false
     },
     {
         id: 13,
@@ -53,7 +58,8 @@ export const LOCATIONS = [
         image: sunriseMedical,
         address: '11102 Sunrise Blvd. E #111, Puyallup, WA',
         weekdays: '7am-4pm Weekdays',
-        weekends: 'Closed Weekends'
+        weekends: 'Closed Weekends',
+        featured: false
     },
     {
         id: 14,
@@ -61,6 +67,7 @@ export const LOCATIONS = [
         image: sunriseVillage,
         address: '156th Street East, Puyallup, WA',
         weekdays: '6am-6pm Weekdays',
-        weekends: '7am-6pm Weekends'
+        weekends: '7am-6pm Weekends',
+        featured: false
     }
 ]
